@@ -65,7 +65,7 @@ services:
         volumes:
             - ./data:/app/data
         env_file:
-            - .env.docker
+            - .env
         environment:
             - DATABASE_URL=http://libsql:8080
             - PORT=3000
@@ -91,7 +91,7 @@ services:
         ports:
             - "3001:3000"
         env_file:
-            - .env.docker
+            - .env
         environment:
             - DATABASE_URL=http://libsql:8080
             - PORT=3000
@@ -119,7 +119,7 @@ services:
         ports:
             - "8081:8080"
         env_file:
-            - .env.docker
+            - .env
         environment:
             - DB_URL=http://libsql:8080
             - TINYBIRD_URL=http://tinybird-local:7181
@@ -154,7 +154,7 @@ services:
         ports:
             - "3002:3000"
         env_file:
-            - .env.docker
+            - .env
         environment:
             - DATABASE_URL=http://libsql:8080
             - PORT=3000
@@ -186,7 +186,7 @@ services:
         ports:
             - "3003:3000"
         env_file:
-            - .env.docker
+            - .env
         environment:
             - DATABASE_URL=http://libsql:8080
             - PORT=3000
